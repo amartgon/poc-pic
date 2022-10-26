@@ -13,9 +13,27 @@ cd mongolocust
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+
+### Consultas calientes
+```shell
+./run_distributed_locust_warm.sh
+```
+
+### Código para prueba de rendimiento de consultas
+
 ```
 * Para ejecutar la prueba de carga de consultas frías:
 ```shell
 locust -f load_test_archive.py
+```
+```
+* Consulta de intervalo de 1 mes:
+```shell
+locust -f load_test_archive_30d.py
+```
+```
+* Consulta de intervalo de 3 meses:
+```shell
+locust -f load_test_archive_90d.py
 ```
 

@@ -21,16 +21,13 @@ pip install -r requirements.txt
 
 ### Código para prueba de rendimiento de consultas
 
-```
 * Para ejecutar la prueba de carga de consultas frías:
 ```shell
 locust -f load_test_archive.py
 ```
-```
 * Consulta de intervalo de 1 mes:
 ```shell
 locust -f load_test_archive_30d.py
-```
 ```
 * Consulta de intervalo de 3 meses:
 ```shell
